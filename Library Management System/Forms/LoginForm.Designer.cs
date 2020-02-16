@@ -37,12 +37,14 @@
 			this.LabelLogin = new System.Windows.Forms.Label();
 			this.labelUserName = new System.Windows.Forms.Label();
 			this.Lock = new System.Windows.Forms.PictureBox();
+			this.label1 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.Lock)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
+			this.panel1.Controls.Add(this.label1);
 			this.panel1.Controls.Add(this.BtnLogin);
 			this.panel1.Controls.Add(this.labelPassword);
 			this.panel1.Controls.Add(this.TxtboxPassword);
@@ -63,7 +65,7 @@
 			this.BtnLogin.Location = new System.Drawing.Point(43, 300);
 			this.BtnLogin.Name = "BtnLogin";
 			this.BtnLogin.Size = new System.Drawing.Size(149, 41);
-			this.BtnLogin.TabIndex = 6;
+			this.BtnLogin.TabIndex = 3;
 			this.BtnLogin.Text = "Login";
 			this.BtnLogin.UseVisualStyleBackColor = false;
 			this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
@@ -83,14 +85,14 @@
 			this.TxtboxPassword.Name = "TxtboxPassword";
 			this.TxtboxPassword.PasswordChar = '*';
 			this.TxtboxPassword.Size = new System.Drawing.Size(134, 20);
-			this.TxtboxPassword.TabIndex = 4;
+			this.TxtboxPassword.TabIndex = 2;
 			// 
 			// TxtboxUsername
 			// 
 			this.TxtboxUsername.Location = new System.Drawing.Point(89, 207);
 			this.TxtboxUsername.Name = "TxtboxUsername";
 			this.TxtboxUsername.Size = new System.Drawing.Size(134, 20);
-			this.TxtboxUsername.TabIndex = 3;
+			this.TxtboxUsername.TabIndex = 1;
 			// 
 			// LabelLogin
 			// 
@@ -121,6 +123,15 @@
 			this.Lock.TabIndex = 0;
 			this.Lock.TabStop = false;
 			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(40, 165);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(172, 26);
+			this.label1.TabIndex = 7;
+			this.label1.Text = "Disclaimer: Use SHA256 Format in \r\n             Table for  password";
+			// 
 			// LoginForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,5 +158,6 @@
 		private System.Windows.Forms.Label LabelLogin;
 		private System.Windows.Forms.Label labelUserName;
 		private System.Windows.Forms.PictureBox Lock;
+		private System.Windows.Forms.Label label1;
 	}
 }

@@ -7,13 +7,13 @@ namespace Library_Management_System.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class DTBS : IMigrationMetadata
+    public sealed partial class SZD : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(DTBS));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(SZD));
         
         string IMigrationMetadata.Id
         {
-            get { return "202002151627363_DTBS"; }
+            get { return "202002161938356_SZD"; }
         }
         
         string IMigrationMetadata.Source

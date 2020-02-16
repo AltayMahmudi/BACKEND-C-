@@ -12,14 +12,28 @@ namespace Library_Management_System.Models
 	{
 	    [Key]
 	    public int BookID { get; set; }
-		
+
+		[Required]
+		[MaxLength(50)]
 		public string BookName { get; set; }
+
+		[Required]
+		[MaxLength(50)]
 		public string BookAuthor { get; set; }
+
+		[Required]
+		[MaxLength(50)]
 		public string BookPublicationName { get; set; }
 
 		[Column(TypeName="date")]
-		public DateTime BookPurchaseDate { get; set; }
+		public DateTime BookReleaseDate { get; set; }
+
+		[Required]
+		[MaxLength(50)]
 		public string BookPrice { get; set; }
+
+		[Required]
+		[MaxLength(50)]
 		public string BookQuantity { get; set; }
 
 

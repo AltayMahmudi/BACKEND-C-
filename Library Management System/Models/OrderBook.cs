@@ -13,19 +13,22 @@ namespace Library_Management_System.Models
 		[Key]
 		public int OrderID { get; set; }
 
-		public string BookName { get; set; }
+		[Required]
+		[MaxLength(50)]
+		public string BookOrderName { get; set; }
 
-		public string StudientName { get; set; }
+		[Required]
+		[MaxLength(50)]
+		public string PersonOrderName { get; set; }
 
-		public DateTime IssueDate { get; set; }
-
+		[Column(TypeName = "date")]
 		public DateTime Deadline { get; set; }
 
-		public DateTime ReturnDate { get; set; }
+		[Column(TypeName = "date")]
+		public DateTime IssueDate { get; set; }
 
-		public string QuantityLeft { get; set; }
 
-		public BookInfo BookInfo { get; set; }
+		//public string QuantityLeft { get; set; }
 
 	}
 }
